@@ -1,0 +1,19 @@
+.dsf-header-container {
+    width: 100%;
+    max-width: 960px;
+    height: 70px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsf-header-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dsf-header-counter {
+    font-size: 12px;
+    font-weight: 700;
+}
