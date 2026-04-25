@@ -1,7 +1,5 @@
-import { useContext } from 'react';
-import type { ProductDTO } from '../../models/product';
-import { ContextProductCount } from '../../utils/context-product';
 import './styles.css';
+import type { ProductDTO } from '../../models/product';
 
 type Props = {
     products: ProductDTO[];
@@ -9,8 +7,6 @@ type Props = {
 
 export default function Listing({products}: Props) {
 
-    const {setContextProductCount} = useContext(ContextProductCount);
-    setContextProductCount(products.length);
 
     return (
         <>

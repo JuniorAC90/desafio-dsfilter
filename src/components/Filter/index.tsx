@@ -6,7 +6,11 @@ type FormData = {
     maxPrice?: number;
 }
 
-export default function Filter() {
+type Props = {
+    onFilter: Function;
+}
+
+export default function Filter({onFilter}: Props) {
 
     const [formData, setFormData] = useState<FormData>({});
 
@@ -18,9 +22,7 @@ export default function Filter() {
 
     function handleSubmit(event: any) {
         event.preventDefault();
-        
-        console.log("MinPrice =" + (formData.minPrice || 0));
-        console.log("MaxPrice =" + (formData.maxPrice || Number.MAX_VALUE));
+        onFilter(formData.minPrice || 0, formData.maxPrice || Number.MAX_VALUE);
     }
 
 
