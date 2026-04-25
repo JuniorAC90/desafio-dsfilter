@@ -11,7 +11,7 @@ export default function Listing({products}: Props) {
         {
             products.map(
                 product => 
-                    <div className='dsf-card-product'>
+                    <div className='dsf-card-product' key={product.id}>
                         <h3 className='dsf-product-title'>{product.name}</h3>
                         <p className='dsf-product-price'>R$ {product.price}</p>
                     </div>
