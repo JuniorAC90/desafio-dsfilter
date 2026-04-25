@@ -1,6 +1,5 @@
-import Filter from "./components/Filter"
-import Header from "./components/Header"
-import Listing from "./components/Listing"
+import Header from "./components/Header";
+import { ListingBody } from "./components/ListingBody";
 
 
 function App() {
@@ -10,8 +9,7 @@ function App() {
     <>
       <Header />
       <main>
-        <Filter />
-        <Listing />
+        <ListingBody />
       </main>
     </>
   )

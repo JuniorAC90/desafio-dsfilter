@@ -1,10 +1,3 @@
-.dsf-card-listing {
-    background-color: var(--dsf-color-card-bg);
-    border: 1px solid var(--dsf-color-card-border);
-    border-radius: 5px;
-    margin-top: 20px
-}
-
 .dsf-card-product {
     margin: 10px;
     border: 1px solid var(--dsf-color-product-border);

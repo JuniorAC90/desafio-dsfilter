@@ -1,0 +1,14 @@
+.dsf-card-filter {
+    background-color: var(--dsf-color-card-bg);
+    height: 200px;
+    border: 1px solid var(--dsf-color-card-border);
+    border-radius: 5px;
+    margin-top: 20px
+}
+
+.dsf-card-listing {
+    background-color: var(--dsf-color-card-bg);
+    border: 1px solid var(--dsf-color-card-border);
+    border-radius: 5px;
+    margin-top: 20px
+}
