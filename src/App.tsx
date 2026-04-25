@@ -1,4 +1,5 @@
-import Header from "./Header"
+import Filter from "./components/Filter"
+import Header from "./components/Header"
 
 
 function App() {
@@ -7,6 +8,9 @@ function App() {
   return (
     <>
       <Header />
+      <main>
+        <Filter />
+      </main>
     </>
   )
 }
