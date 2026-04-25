@@ -5,7 +5,7 @@
   --dsf-color-bg-secondary: #55BC04;
 
   --dsf-color-card-bg: #fff;
-  --dsf-color-card-border: ##C2C2C2;
+  --dsf-color-card-border: #C2C2C2;
   --dsf-color-product-border: #55BC04;
 
   --dsf-color-btn-primary: #55BC04;
@@ -39,4 +39,11 @@ body {
 header {
     background-color: var(--dsf-color-bg-secondary);
     color: var(--dsf-color-font-primary);
+    height: 70px;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
 }
