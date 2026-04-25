@@ -1,32 +1,24 @@
+import type { ProductDTO } from '../../models/product';
 import './styles.css';
 
-export default function Listing() {
+type Props = {
+    products: ProductDTO[];
+}
+
+export default function Listing({products}: Props) {
     return (
         <>
-            <div className='dsf-card-product'>
-                <h3 className='dsf-product-title'>PC Gamer Pro</h3>
-                <p className='dsf-product-price'>R$ 1200.00</p>
-            </div>
-            <div className='dsf-card-product'>
-                <h3 className='dsf-product-title'>PC Gamer Pro</h3>
-                <p className='dsf-product-price'>R$ 1200.00</p>
-            </div>
-            <div className='dsf-card-product'>
-                <h3 className='dsf-product-title'>PC Gamer Pro</h3>
-                <p className='dsf-product-price'>R$ 1200.00</p>
-            </div>
-            <div className='dsf-card-product'>
-                <h3 className='dsf-product-title'>PC Gamer Pro</h3>
-                <p className='dsf-product-price'>R$ 1200.00</p>
-            </div>
-            <div className='dsf-card-product'>
-                <h3 className='dsf-product-title'>PC Gamer Pro</h3>
-                <p className='dsf-product-price'>R$ 1200.00</p>
-            </div>
-            <div className='dsf-card-product'>
-                <h3 className='dsf-product-title'>PC Gamer Pro</h3>
-                <p className='dsf-product-price'>R$ 1200.00</p>
-            </div>
+        {
+            products.map(
+                product => 
+                    <div className='dsf-card-product'>
+                        <h3 className='dsf-product-title'>{product.name}</h3>
+                        <p className='dsf-product-price'>R$ {product.price}</p>
+                    </div>
+                
+            )
+        }
+        
         </>
     );
 }
